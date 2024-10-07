@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.github.CST-Group'
 
-description = "CST-Bindings"
+description = "CST-LLMs"
 
 java {
    //sourceCompatibility = JavaVersion.VERSION_11
