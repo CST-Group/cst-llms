@@ -1,7 +1,7 @@
-![](https://github.com/CST-Group/cst-bindings/actions/workflows/java-ci.yml/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/82a61f13a021683fabd3/maintainability)](https://codeclimate.com/github/CST-Group/cst-bindings/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/82a61f13a021683fabd3/test_coverage)](https://codeclimate.com/github/CST-Group/cst-bindings/test_coverage)
-[![](https://jitpack.io/v/CST-Group/cst-bindings.svg)](https://jitpack.io/#CST-Group/cst-bindings)
+![](https://github.com/CST-Group/cst-llms/actions/workflows/java-ci.yml/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/82a61f13a021683fabd3/maintainability)](https://codeclimate.com/github/CST-Group/cst-llms/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/82a61f13a021683fabd3/test_coverage)](https://codeclimate.com/github/CST-Group/cst-llms/test_coverage)
+[![](https://jitpack.io/v/CST-Group/cst-llms.svg)](https://jitpack.io/#CST-Group/cst-llms)
 
 
 # Welcome to the CST Toolkit pages.
@@ -28,11 +28,11 @@ Note: This library is still under development, and some concepts or features mig
 ```
 	dependencies {
             ...
-            implementation 'com.github.CST-Group:cst-bindings:1.0.7'
+            implementation 'com.github.CST-Group:cst-llms:1.0.7'
 	}
 ```
 
-Sometimes, the version number (tag) in this README gets out of date, as maintainers might forget to change it when releasing. Always check the release badge [![](https://jitpack.io/v/CST-Group/cst-bindings.svg)](https://jitpack.io/#CST-Group/cst-bindings) to see the actual current version number that should be provided in the dependencies in Step 2 above.
+Sometimes, the version number (tag) in this README gets out of date, as maintainers might forget to change it when releasing. Always check the release badge [![](https://jitpack.io/v/CST-Group/cst-llms.svg)](https://jitpack.io/#CST-Group/cst-llms) to see the actual current version number that should be provided in the dependencies in Step 2 above.
 
 ### Maven
 
@@ -52,12 +52,12 @@ Sometimes, the version number (tag) in this README gets out of date, as maintain
 ```
 	<dependency>
 	    <groupId>com.github.CST-Group</groupId>
-	    <artifactId>cst-bindings</artifactId>
+	    <artifactId>cst-llms</artifactId>
 	    <version>1.0.7</version>
 	</dependency>
 ```
 
-Sometimes, the version number (tag) in this README gets out of date, as maintainers might forget to change it when releasing. Always check the release badge [![](https://jitpack.io/v/CST-Group/cst-bindings.svg)](https://jitpack.io/#CST-Group/cst-bindings) to see the actual current version number that should be provided in the dependencies in Step 2 above.
+Sometimes, the version number (tag) in this README gets out of date, as maintainers might forget to change it when releasing. Always check the release badge [![](https://jitpack.io/v/CST-Group/cst-llms.svg)](https://jitpack.io/#CST-Group/cst-llms) to see the actual current version number that should be provided in the dependencies in Step 2 above.
 
 ### Manual
 
@@ -68,11 +68,11 @@ Download the latest [release](https://github.com/CST-Group/cst/releases) and set
 There are four CST repos:
 
 - [CST](https://github.com/CST-Group/cst)
-- [CST-Bindings](https://github.com/CST-Group/cst-bindings) (this repo)
+- [CST-llms](https://github.com/CST-Group/cst-llms) (this repo)
 - [CST-Desktop](https://github.com/CST-Group/cst-desktop)
 - [CST-Legacy](https://github.com/CST-Group/cst-legacy)
 
-The original [CST](https://github.com/CST-Group/cst) repo contains all core functionalities and some additional packages. It has no *Swing* or other graphical entities, being suitable to both desktop and mobile environments. [CST-Bindings](https://github.com/CST-Group/cst-bindings) contains the needed classes to communicate with [ROS](https://www.ros.org/) and [SOAR Cognitive Architecture](https://soar.eecs.umich.edu/). [CST-Desktop](https://github.com/CST-Group/cst-desktop) contains some utility classes as well. It is also the complete toolkit, as it has a chain dependency with the other three repos. Finally, all classes that were once important but became obsolete as CST evolved are in [CST-Legacy](https://github.com/CST-Group/cst-legacy).
+The original [CST](https://github.com/CST-Group/cst) repo contains all core functionalities and some additional packages. It has no *Swing* or other graphical entities, being suitable to both desktop and mobile environments. [CST-llms](https://github.com/CST-Group/cst-llms) contains the needed classes to communicate with [ROS](https://www.ros.org/) and [SOAR Cognitive Architecture](https://soar.eecs.umich.edu/). [CST-Desktop](https://github.com/CST-Group/cst-desktop) contains some utility classes as well. It is also the complete toolkit, as it has a chain dependency with the other three repos. Finally, all classes that were once important but became obsolete as CST evolved are in [CST-Legacy](https://github.com/CST-Group/cst-legacy).
 
 
 
