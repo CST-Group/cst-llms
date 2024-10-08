@@ -11,6 +11,41 @@ on:
       - main
 
 jobs:
+  ollama-e2e:
+        runs-on: ubuntu-22.04
+        name: ollama-e2e
+        steps:
+        - uses: actions/checkout@v1
+        - uses: self-actuated/nvidia-run@master
+        - name: Install Ollama
+          run: |
+            curl -fsSL https://ollama.com/install.sh | sudo -E sh
+        - name: Start serving
+          run: |
+              # Run the background, there is no way to daemonise at the moment
+              ollama serve &
+
+              # A short pause is required before the HTTP port is opened
+              sleep 5
+
+              # This endpoint blocks until ready
+              time curl -i http://localhost:11434
+
+        - name: Pull llama3
+          run: |
+              ollama pull llama3
+
+        #- name: Invoke via the CLI
+        #  run: |
+        #      ollama run llama2 "What are the pros of MicroVMs for continous integrations, especially if Docker is the alternative?"
+
+        #- name: Invoke via API
+        #  run: |
+        #    curl -s http://localhost:11434/api/generate -d '{
+        #      "model": "llama2",
+        #      "stream": false,
+        #      "prompt":"What are the risks of running privileged Docker containers for CI workloads?"
+        #    }' | jq
   build:
     runs-on: ubuntu-22.04
     strategy:
