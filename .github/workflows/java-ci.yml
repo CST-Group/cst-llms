@@ -11,9 +11,9 @@ on:
       - main
 
 jobs:
-  ollama-e2e:
+  ollama-e:
         runs-on: ubuntu-22.04
-        name: ollama-e2e
+        name: ollama-e
         steps:
         - uses: actions/checkout@v1
         #- uses: self-actuated/nvidia-run@master
