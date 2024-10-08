@@ -9,7 +9,7 @@
  *     W. Gibaut
  ******************************************************************************/
 
-package br.unicamp.cst.bindings.openai;
+package br.unicamp.cst.llms.openai;
 
 
 import br.unicamp.cst.io.rest.HttpCodelet;
@@ -61,7 +61,7 @@ public abstract class GPTCodelet extends HttpCodelet {
 
     private void buildOpenAI (String openApiKey){
         openAI = SimpleOpenAI.builder()
-                .apiKey(System.getenv(openApiKey))
+                .apiKey(openApiKey)
                 .build();
     }
 
@@ -76,7 +76,7 @@ public abstract class GPTCodelet extends HttpCodelet {
 
     public String completionOpenAI(String systemContent, String userContent){
         ChatRequest chatRequest = ChatRequest.builder()
-                .model((String)config.get("gpt-4o-mini"))
+                .model((String)config.get("model"))
                 .message(ChatMessage.SystemMessage.of(systemContent))
                 .message(ChatMessage.UserMessage.of(userContent))
                 .temperature((Double)config.get("temperature"))

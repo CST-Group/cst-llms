@@ -1,6 +1,5 @@
-package br.unicamp.cst.bindings.langchain;
+package br.unicamp.cst.llms.langchain;
 
-import br.unicamp.cst.bindings.openai.GPTCodelet;
 import br.unicamp.cst.core.entities.Mind;
 import org.junit.Test;
 

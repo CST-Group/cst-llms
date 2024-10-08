@@ -9,7 +9,7 @@
  *     W. Gibaut
  ******************************************************************************/
 
-package br.unicamp.cst.bindings.langchain;
+package br.unicamp.cst.llms.langchain;
 import br.unicamp.cst.io.rest.HttpCodelet;
 import com.hw.langchain.llms.ollama.Ollama;
 
