@@ -1,7 +1,7 @@
 ![](https://github.com/CST-Group/cst-llms/actions/workflows/java-ci.yml/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/82a61f13a021683fabd3/maintainability)](https://codeclimate.com/github/CST-Group/cst-llms/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/82a61f13a021683fabd3/test_coverage)](https://codeclimate.com/github/CST-Group/cst-llms/test_coverage)
-[![](https://jitpack.io/v/CST-Group/cst-llms.svg)](https://jitpack.io/#CST-Group/cst-llms)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e26a6e2e47bb7a70d9ea/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/82a61f13a021683fabd3/test_coverage)](https://api.codeclimate.com/v1/badges/e26a6e2e47bb7a70d9ea/test_coverage)
+[![](https://jitpack.io/v/CST-Group/cst-llms.svg)](https://jitpack.io/#CST-Group/cst-llms/main-SNAPSHOT)
 
 
 # Welcome to the CST Toolkit pages.
@@ -68,11 +68,12 @@ Download the latest [release](https://github.com/CST-Group/cst/releases) and set
 There are four CST repos:
 
 - [CST](https://github.com/CST-Group/cst)
+- [CST-bidings](https://github.com/CST-Group/cst-bindings)
 - [CST-llms](https://github.com/CST-Group/cst-llms) (this repo)
 - [CST-Desktop](https://github.com/CST-Group/cst-desktop)
 - [CST-Legacy](https://github.com/CST-Group/cst-legacy)
 
-The original [CST](https://github.com/CST-Group/cst) repo contains all core functionalities and some additional packages. It has no *Swing* or other graphical entities, being suitable to both desktop and mobile environments. [CST-llms](https://github.com/CST-Group/cst-llms) contains the needed classes to communicate with [ROS](https://www.ros.org/) and [SOAR Cognitive Architecture](https://soar.eecs.umich.edu/). [CST-Desktop](https://github.com/CST-Group/cst-desktop) contains some utility classes as well. It is also the complete toolkit, as it has a chain dependency with the other three repos. Finally, all classes that were once important but became obsolete as CST evolved are in [CST-Legacy](https://github.com/CST-Group/cst-legacy).
+The original [CST](https://github.com/CST-Group/cst) repo contains all core functionalities and some additional packages. It has no *Swing* or other graphical entities, being suitable to both desktop and mobile environments. [CST-llms](https://github.com/CST-Group/cst-llms) contains the needed classes to communicate with [Ollama](https://ollama.com/) and [OpenAI](https://openai.com). [CST-Desktop](https://github.com/CST-Group/cst-desktop) contains some utility classes as well. It is also the complete toolkit, as it has a chain dependency with the other three repos. Finally, all classes that were once important but became obsolete as CST evolved are in [CST-Legacy](https://github.com/CST-Group/cst-legacy).
 
 
 
@@ -85,9 +86,7 @@ CST requires at minimum Java 8.
 
 ### Authors and Contributors
 The main contributors of this project are:
-* [Ricardo Ribeiro Gudwin](httUtility package of CST (Cognitive Systems Toolkit)
-  3
-  ps://github.com/rgudwin)
+* [Ricardo Ribeiro Gudwin](https://github.com/rgudwin)
 * [Klaus Raizer](https://github.com/KRaizer)
 * [André Luis Ogando Paraense](https://github.com/andre-paraense)
 * [Suelen Mapa de Paula](https://github.com/suelenmapa)

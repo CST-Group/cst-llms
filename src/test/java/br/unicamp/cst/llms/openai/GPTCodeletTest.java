@@ -167,8 +167,9 @@ public class GPTCodeletTest {
         mind.start();
 
         //String answer = gptCodelet_4.completionOpenAI("Say this is a test!");
+        //String answer = "";
         String answer = "";
-
+        
         Thread.sleep(2000L);
 
         mind.shutDown();
